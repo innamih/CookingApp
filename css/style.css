@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: linear-gradient(150.22deg, #FCECEC 11.38%, #FFFCFC 94.36%);
+    font-family: 'Poppins' sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 50px;
+}
+
+.header-inner {
+    display: flex;
+}
+
+.header-inner h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 120%;
+    color: #E23E3E;
+    width: 520px;
+    padding: 100px 90px;
+
+}
+
+.header .button,
+.button-btn {
+    height: 40px;
+    padding: 5px 15px;
+    border: 2px solid #E23E3E;
+    font-weight: 700px;
+    font-size: 32px;
+    line-height: 38px;
+    color: #E23E3E;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.button-btn {
+    color: #FCECEC;
+    border: 2px solid #FCECEC;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #E23E3E;
+    border-radius: 15px;
+    align-items: center;
+    color: #E23E3E;
+    padding: 100px;
+    gap: 40px;
+    font-weight: 700px;
+    font-size: 32px;
+    line-height: 38px;
+
+}
+
+input {
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #E23E3E;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 23px;
+
+}
+
+.menu-list {
+    width: 100%;
+    font-family: 'Poppins';
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #E23E3E;
+
+}
+
+
+
+.cook-slider {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.cook-slider .container{
+    position: relative;
+}
+
+.slider-cook-items {
+    display: flex;
+}
+
+.slider-cook-item {
+    display: inline-block;
+    max-height: 100%;
+}
+
+
+
+.slider-cook-arrows{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-prev,
+.btn-next {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    fill: rebeccapurple ;
+    stroke: #fff;
+
+}
+
+.btn-prev svg:hover,
+.btn-next svg:hover {
+    fill: #fff ;
+    stroke: rebeccapurple ;
+}
+
+
+.cook-slider-small {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cook-slider-small .container {
+    position: relative;
+}
+
+.slider-cook-kids{
+    display: flex;
+}
+
+.slider-cook-girl {
+    height: 300px;
+    display: inline-flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+.slick-disabled {
+    opacity: .3;
+    pointer-events: none;
+}
+
+table {
+    max-width: 1200px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    font-family: 'Poppins';
+    width: 100%;
+    text-align: left;
+    margin: 20px auto;
+}
+
+
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+@media (max-width: 767px){
+    table{
+        border: 0;
+    }
+    thead{
+        display: none;
+    }
+    tbody{
+        counter-reset: human-counter;
+    }
+
+    tr{
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+        counter-increment: human-counter;
+    }
+
+    tr + tr td:before,
+    tr + tr td span{
+        border-top: 0;=
+    }
+   
+
+    tr td{
+        display: flex;
+        border: 0;
+        width: 100%; 
+    }
+    
+
+    tr td + td span,
+    tr td + td:before{
+        border-top: 0;
+    }
+
+    td span{
+        padding: 5px;
+        display: table-cell;
+        width: 50%;
+        border: 1px solid black;
+    }
+
+    td:before{
+        padding: 5px;
+        display: table-cell;
+        width: 50%;
+        border: 1px solid black;
+        font-weight: bold;
+    }
+
+    tr td:nth-child(1):before{
+       content: counter(human-counter) '. Фамилия: ';
+    }
+
+    tr td:nth-child(2):before{
+        content: "Имя: ";
+    }
+ 
+    tr td:nth-child(3):before{
+        content: "Отчество: ";
+    }
+    
+    
+
+   
+}
+
+
+.footer {
+    background-color: #E23E3E;
+}
+
+
+
+.footer-social-link+.footer-social-link {
+    margin-left: 25px;
+}
+
+@media (min-width: 320px) {
+    .table {}
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookingApp</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <h2>Готовим вместе</h2>
+            </div>
+            <a class="button" href="registr.html">Регистрация</a>
+
+            <main>
+                <form class="form" action="#">
+                    <input type="text" placeholder="Логин">
+                    <input type="password" placeholder="Пароль">
+                    <a href="cook.html" class="button-btn login">Войти</a>
+                </form>
+            </main>
+        </div>
+    </header>
+   
+
+    <nav class="menu">
+        <ul class="menu-list">
+            <li class="menu-item">Готовим вкусно</li>
+            <li class="menu-item">Готовим быстро</li>
+            <li class="menu-item">Готовим весело</li>
+            <li class="menu-item">Готовим красиво</li>
+        </ul>
+    </nav>
+    <!--!первая галерея-->
+    <div class="cook-slider">
+        <div class="container">
+            <div class="slider-cook-items">
+                <!-- <div class="slider-cook-item">
+                    <img class="cook-slider-img" src="img/health.jpg" alt="">
+                </div> -->
+                <a class="slider-cook-item" href="img/eda.jpg"  data-fancybox="group1">
+                    <img class="cook-slider-img" src="img/eda.jpg" alt="">
+                </a>
+                <a class="slider-cook-item" href="img/eda1.jpg" data-fancybox="group1">
+                    <img class="cook-slider-img" src="img/eda1.jpg" alt="" >
+                </a>
+                <a class="slider-cook-item" href="img/pancakes.jpg" data-fancybox="group1">
+                    <img class="cook-slider-img" src="img/pancakes.jpg" alt="" >
+                </a>
+                <a class="slider-cook-img" href="img/bread.jpg" data-fancybox="group1">
+                    <img class="cook-slider-img" src="img/bread.jpg" alt="" >
+                </a>
+                <a class="slider-cook-img" href="img/dough.jpg" data-fancybox="group1">
+                    <img class="cook-slider-img" src="img/dough.jpg" alt="" >
+                </a>
+            </div>
+            <div class="slider-cook-arrows">
+                <button class="btn-prev" id="cook-slider-prev">
+                    <svg width="35" height="35" viewBox="0 0 35 35"  xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="17.7484" cy="17.6048" r="16.6017" transform="rotate(-180 17.7484 17.6048)" />
+                        <path d="M19.8004 10.7642L12.9597 17.6049L19.8004 24.4456" />
+                    </svg>
+                </button>
+                <button class="btn-next" id="cook-slider-next">
+                    <svg width="36" height="35" viewBox="0 0 36 35" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18.042" cy="17.1018" r="16.6018" />
+                        <path d="M15.9898 23.9424L22.8306 17.1017L15.9898 10.261" />
+                    </svg>                        
+                </button>
+            </div>
+        </div>
+        
+    </div>
+
+<!--вторая галерея-->
+    <div class="cook-slider-small">
+        <div class="container">
+            <div class="slider-cook-kids">
+                <div class="slider-cook-girl">
+                    <img class="smile" src="img/smile3.jpg" alt="">
+                </div>
+                <div class="slider-cook-girl">
+                    <img class="smile" src="img/smile4.jpg" alt="">
+                </div>
+                <div class="slider-cook-girl">
+                    <img class="smile" src="img/smile3.jpg" alt="">
+                </div>
+                <div class="slider-cook-girl">
+                    <img class="smile" src="img/smile4.jpg" alt="">
+                </div>
+                <div class="slider-cook-girl">
+                    <img class="smile" src="img/smile3.jpg" alt="">
+                </div>
+                <div class="slider-cook-girl">
+                    <img class="smile" src="img/smile4.jpg" alt="">
+                </div>
+            </div>
+            <div class="slider-cook-arrows">
+                <button class="btn-prev" id="cook-slider-small-prev">
+                    <svg width="35" height="35" viewBox="0 0 35 35"  xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="17.7484" cy="17.6048" r="16.6017" transform="rotate(-180 17.7484 17.6048)" />
+                        <path d="M19.8004 10.7642L12.9597 17.6049L19.8004 24.4456" />
+                    </svg>
+                </button>
+                <button class="btn-next" id="cook-slider-small-next">
+                    <svg width="36" height="35" viewBox="0 0 36 35" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18.042" cy="17.1018" r="16.6018" />
+                        <path d="M15.9898 23.9424L22.8306 17.1017L15.9898 10.261" />
+                    </svg>                        
+                </button>
+            </div>
+        </div>
+    </div>
+   
+
+   
+
+    <table>
+        <thead> 
+            <tr>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>Отчество</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span>Иванов</span></td>
+                <td><span>Петр</span></td>
+                <td><span>Сергеевич</span></td>
+            </tr>
+    
+            <tr>
+                <td><span>Сергеев</span></td>
+                <td><span>Иван</span></td>
+                <td><span>Петрович</span></td>
+    
+            </tr>
+            <tr>
+                <td><span>Петров</span></td>
+                <td><span>Сергей</span></td>
+                <td><span>Иванович</span></td>
+    
+            </tr>
+        </tbody>
+
+
+    </table>
+    <footer class="footer">
+        <div class="footer-social">
+            <a class="footer-social-link" href="#">
+                <img class="footer-social-img" src="img/instagram.svg" alt="">
+            </a>
+            <a class="footer-social-link" href="#">
+                <img class="footer-social-img" src="img/facebook.svg" alt="">
+            </a>
+            <a class="footer-social-link" href="#">
+                <img class="footer-social-img" src="img/mail.svg" alt="">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
